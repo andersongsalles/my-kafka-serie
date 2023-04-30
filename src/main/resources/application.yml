@@ -30,3 +30,9 @@ spring:
           time_zone: UTC
           batch_size: ${JBDC_BATCH_SIZE:50}
       type: trace
+
+kafka:
+  bootstrapServers: 127.0.0.1:9092
+  acksConfig: all
+  retriesConfig: 10
+  schemaRegistryUrl: "http://127.0.0.1:8081"
